@@ -307,18 +307,16 @@ export default function Header() {
                         <FaTools size={40} />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-3">
-                        {isRtl ? "بزودی..." : "Coming Soon..."}
+                        {t("comingSoon.title")}
                     </h3>
                     <p className="text-gray-500 mb-8 leading-relaxed">
-                        {isRtl 
-                            ? "این بخش در حال توسعه است و به زودی در دسترس قرار خواهد گرفت." 
-                            : "This section is under development and will be available soon."}
+                        {t("comingSoon.message")}
                     </p>
                     <button 
                         onClick={() => setShowComingSoon(false)}
                         className="w-full py-3 rounded-xl bg-[var(--main-color)] text-white font-semibold shadow-lg shadow-[var(--main-color)]/30 hover:shadow-xl hover:-translate-y-1 transition-all"
                     >
-                        {isRtl ? "متوجه شدم" : "Got it"}
+                        {t("comingSoon.button")}
                     </button>
                 </div>
             </div>

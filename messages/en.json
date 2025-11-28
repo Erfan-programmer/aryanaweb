@@ -7,6 +7,11 @@
       "blog": "Blog",
       "contact": "Contact Us"
     },
+    "comingSoon": {
+    "title": "Coming Soon...",
+    "message": "This section is under development and will be available soon.",
+    "button": "Got it"
+  },
     "actions": {
       "login": "Login | Sign Up",
       "contactLabel": "Contact Us",

@@ -7,6 +7,11 @@
       "blog": "Blog",
       "contact": "Bize Ulaşın"
     },
+    "comingSoon": {
+    "title": "Yakında...",
+    "message": "Bu bölüm geliştirme aşamasındadır ve yakında kullanıma sunulacaktır.",
+    "button": "Anladım"
+  },
     "actions": {
       "login": "Giriş | Kayıt",
       "contactLabel": "Bize Ulaşın",
