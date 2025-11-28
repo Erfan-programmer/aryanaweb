@@ -11,9 +11,10 @@ import {
   FaGraduationCap, 
   FaBriefcase,
   FaGlobe,
-  FaChevronDown
+  FaChevronDown,
+  FaTools
 } from "react-icons/fa";
-import { FiLogIn, FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter, Link } from "@/i18n/routing";
@@ -26,10 +27,9 @@ export default function Header() {
 
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [showComingSoon, setShowComingSoon] = useState(false);
   
-  // Ref برای دسکتاپ
   const langMenuRef = useRef<HTMLDivElement>(null);
-  // Ref جدید برای موبایل
   const mobileLangRef = useRef<HTMLDivElement>(null);
 
   const isRtl = locale === "fa" || locale === "ar";
@@ -43,11 +43,15 @@ export default function Header() {
 
   const currentLang = languages.find(l => l.code === locale) || languages[0];
 
+  const toPersianDigits = (str: string) => {
+    if (locale !== "fa") return str;
+    return str.replace(/[0-9]/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[parseInt(d)]);
+  };
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       const target = event.target as Node;
       
-      // بررسی می‌کنیم که آیا کلیک بیرون از دسکتاپ AND بیرون از موبایل بوده است
       const isOutsideDesktop = langMenuRef.current && !langMenuRef.current.contains(target);
       const isOutsideMobile = mobileLangRef.current && !mobileLangRef.current.contains(target);
 
@@ -60,12 +64,12 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    if (open) {
+    if (open || showComingSoon) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
     }
-  }, [open]);
+  }, [open, showComingSoon]);
 
   const handleLanguageChange = (newLocale: string) => {
     router.replace(pathname, { locale: newLocale });
@@ -73,12 +77,21 @@ export default function Header() {
   };
 
   const menuItems = [
-    { title: t("menu.home"), href: "/", icon: <FaHome size={18} /> },
-    { title: t("menu.services"), href: "/#services", icon: <FaBriefcase size={18} /> },
-    { title: t("menu.education"), href: "/education", icon: <FaGraduationCap size={18} /> },
-    { title: t("menu.blog"), href: "/blog", icon: <FaBlog size={18} /> },
-    { title: t("menu.contact"), href: "/#contact_us", icon: <FaPhoneVolume size={18} /> },
+    { title: t("menu.home"), href: "/", icon: <FaHome size={18} />, isComingSoon: false },
+    { title: t("menu.services"), href: "/#services", icon: <FaBriefcase size={18} />, isComingSoon: false },
+    { title: t("menu.education"), href: "/education", icon: <FaGraduationCap size={18} />, isComingSoon: true },
+    { title: t("menu.blog"), href: "/blog", icon: <FaBlog size={18} />, isComingSoon: true },
+    { title: t("menu.contact"), href: "/#contact_us", icon: <FaPhoneVolume size={18} />, isComingSoon: false },
   ];
+
+  const handleItemClick = (item: typeof menuItems[0]) => {
+    if (item.isComingSoon) {
+      setOpen(false);
+      setShowComingSoon(true);
+    } else {
+        setOpen(false);
+    }
+  };
 
   return (
     <div dir={isRtl ? "rtl" : "ltr"}>
@@ -100,13 +113,23 @@ export default function Header() {
           <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-gray-500 font-medium text-sm lg:text-base">
             {menuItems.map((item, index) => (
               <li key={index}>
-                <Link
-                  href={item.href}
-                  className="flex items-center gap-2 hover:text-[var(--main-color)] transition-colors"
-                >
-                  {index === 0 && item.icon}
-                  <span>{item.title}</span>
-                </Link>
+                {item.isComingSoon ? (
+                    <button
+                        onClick={() => setShowComingSoon(true)}
+                        className="flex items-center gap-2 hover:text-[var(--main-color)] transition-colors cursor-pointer"
+                    >
+                        {index === 0 && item.icon}
+                        <span>{item.title}</span>
+                    </button>
+                ) : (
+                    <Link
+                    href={item.href}
+                    className="flex items-center gap-2 hover:text-[var(--main-color)] transition-colors"
+                    >
+                    {index === 0 && item.icon}
+                    <span>{item.title}</span>
+                    </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -146,24 +169,18 @@ export default function Header() {
             <div className="flex items-start gap-2 text-gray-600">
               <div className={`flex flex-col text-sm ${isRtl ? 'items-end' : 'items-start'}`}>
                 <a href="tel:09918040507" className="font-semibold text-gray-800 tracking-wider hover:text-[var(--main-color)] dir-ltr">
-                  09918040507
+                  {toPersianDigits("09918040507")}
                 </a>
                 <a href="tel:09025205618" className="font-semibold text-gray-800 tracking-wider hover:text-[var(--main-color)] dir-ltr">
-                  09025205618
+                  {toPersianDigits("09025205618")}
                 </a>
                 <span className="text-gray-500 text-xs">{t("actions.contactLabel")}</span>
               </div>
               <FaPhoneVolume size={24} className="text-[var(--main-color)] mt-1" />
             </div>
-
-            <Link href="/login" className="flex items-center gap-2 bg-[var(--main-color)] text-white font-semibold px-4 py-2 rounded-xl shadow-md hover:bg-[#FF8C42] transition-all text-sm">
-              <FiLogIn size={18} className={isRtl ? "rotate-180" : ""} />
-              <span>{t("actions.login")}</span>
-            </Link>
           </div>
 
           <div className="md:hidden flex items-center gap-3">
-            {/* اضافه کردن ref جدید به این بخش */}
             <div className="relative" ref={mobileLangRef}>
               <button 
                 onClick={(e) => {
@@ -232,39 +249,80 @@ export default function Header() {
 
           <div className="flex-1 overflow-y-auto py-4 px-3 space-y-2">
             {menuItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="flex items-center gap-3 p-3 rounded-xl text-gray-700 font-medium hover:bg-[var(--main-color)] hover:text-white hover:shadow-md transition-all duration-200 group"
-              >
-                <span className="text-[var(--main-color)] group-hover:text-white transition-colors">
-                  {item.icon}
-                </span>
-                {item.title}
-              </Link>
+               item.isComingSoon ? (
+                <button
+                    key={index}
+                    onClick={() => handleItemClick(item)}
+                    className="w-full flex items-center gap-3 p-3 rounded-xl text-gray-700 font-medium hover:bg-[var(--main-color)] hover:text-white hover:shadow-md transition-all duration-200 group"
+                >
+                    <span className="text-[var(--main-color)] group-hover:text-white transition-colors">
+                        {item.icon}
+                    </span>
+                    {item.title}
+                </button>
+               ) : (
+                <Link
+                    key={index}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-3 p-3 rounded-xl text-gray-700 font-medium hover:bg-[var(--main-color)] hover:text-white hover:shadow-md transition-all duration-200 group"
+                >
+                    <span className="text-[var(--main-color)] group-hover:text-white transition-colors">
+                        {item.icon}
+                    </span>
+                    {item.title}
+                </Link>
+               )
             ))}
           </div>
 
           <div className="p-4 border-t border-gray-100 bg-gray-50 space-y-4">
-            
             <div className="flex items-center justify-between bg-white p-3 rounded-xl shadow-sm border border-gray-100">
               <div className="flex flex-col">
                 <span className="text-xs text-gray-500">{t("actions.phoneTitle")}</span>
-                <a href="tel:09918040507" className="font-bold text-gray-800 hover:text-[var(--main-color)] dir-ltr text-right">09918040507</a>
-                <a href="tel:09025205618" className="font-bold text-gray-800 hover:text-[var(--main-color)] dir-ltr text-right">09025205618</a>
+                <a href="tel:09918040507" className="font-bold text-gray-800 hover:text-[var(--main-color)] dir-ltr text-right">
+                    {toPersianDigits("09918040507")}
+                </a>
+                <a href="tel:09025205618" className="font-bold text-gray-800 hover:text-[var(--main-color)] dir-ltr text-right">
+                    {toPersianDigits("09025205618")}
+                </a>
               </div>
               <div className="bg-[var(--main-color)]/10 p-2 rounded-full">
                  <FaPhoneVolume size={20} className="text-[var(--main-color)]" />
               </div>
             </div>
-
-            <Link href="/login" className="w-full flex items-center justify-center gap-2 bg-[var(--main-color)] text-white font-semibold px-4 py-3 rounded-xl shadow-md hover:bg-[#FF8C42] transition-all">
-              <FiLogIn size={20} className={isRtl ? "rotate-180" : ""} />
-              <span>{t("actions.login")}</span>
-            </Link>
           </div>
         </div>
+
+        {showComingSoon && (
+            <div 
+                className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
+                onClick={() => setShowComingSoon(false)}
+            >
+                <div 
+                    className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm text-center transform transition-all duration-300 scale-100 opacity-100"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <div className="w-20 h-20 bg-[var(--main-color)]/10 rounded-full flex items-center justify-center mx-auto mb-6 text-[var(--main-color)] animate-pulse">
+                        <FaTools size={40} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                        {isRtl ? "بزودی..." : "Coming Soon..."}
+                    </h3>
+                    <p className="text-gray-500 mb-8 leading-relaxed">
+                        {isRtl 
+                            ? "این بخش در حال توسعه است و به زودی در دسترس قرار خواهد گرفت." 
+                            : "This section is under development and will be available soon."}
+                    </p>
+                    <button 
+                        onClick={() => setShowComingSoon(false)}
+                        className="w-full py-3 rounded-xl bg-[var(--main-color)] text-white font-semibold shadow-lg shadow-[var(--main-color)]/30 hover:shadow-xl hover:-translate-y-1 transition-all"
+                    >
+                        {isRtl ? "متوجه شدم" : "Got it"}
+                    </button>
+                </div>
+            </div>
+        )}
 
       </header>
     </div>
