@@ -10,7 +10,8 @@ export default function AryanawebResuems() {
 
   return (
     <section 
-      className="aryanaweb-section my-20"
+    id="resumes"
+      className="aryanaweb-section my-10 py-20"
       dir={isRtl ? "rtl" : "ltr"}
     >
       <div className="aryanaweb-inner max-w-7xl mx-auto px-4">

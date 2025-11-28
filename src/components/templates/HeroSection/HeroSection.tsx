@@ -7,6 +7,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./HeroSection.css";
 import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 
 export default function HeroSection() {
   const t = useTranslations("HeroSection");
@@ -100,15 +101,15 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-6">
-              <button className="flex items-center gap-2 px-5 py-2 rounded-xl border-2 border-teal-400 bg-teal-400 text-white text-sm sm:text-base hover:bg-white hover:text-teal-400 transition">
+              <Link href="#contact_us" className="flex items-center gap-2 px-5 py-2 rounded-xl border-2 border-teal-400 bg-teal-400 text-white text-sm sm:text-base hover:bg-white hover:text-teal-400 transition">
                 <MdOutlineSupportAgent />
                 {t("buttons.consult")}
-              </button>
+              </Link>
 
-              <button className="flex items-center gap-2 px-5 py-2 rounded-xl border-2 border-teal-400 bg-white text-teal-400 text-sm sm:text-base hover:bg-teal-400 hover:text-white transition">
+              <Link href="#resumes" className="flex items-center gap-2 px-5 py-2 rounded-xl border-2 border-teal-400 bg-white text-teal-400 text-sm sm:text-base hover:bg-teal-400 hover:text-white transition">
                 <RiDashboardFill />
                 {t("buttons.portfolio")}
-              </button>
+              </Link>
             </div>
           </motion.div>
         </AnimatePresence>
