@@ -1,0 +1,162 @@
+{
+  "Header": {
+    "menu": {
+      "home": "Ana Sayfa",
+      "services": "Hizmetler",
+      "education": "Eğitim",
+      "blog": "Blog",
+      "contact": "Bize Ulaşın"
+    },
+    "actions": {
+      "login": "Giriş | Kayıt",
+      "contactLabel": "Bize Ulaşın",
+      "phoneTitle": "Telefon Numaraları"
+    }
+  },
+  "TopBar": {
+    "workingHours": "Çalışma Saatleri: Cumartesi - Perşembe 09:30 - 22:00",
+    "address": "Ofis Adresi: Erdebil, Şehrak Azadi Girişi, Milad Binası, Daire 5"
+  },
+
+  "HeroSection": {
+    "slides": {
+      "0": {
+        "subtitle": "Web Tasarım Hizmetleri",
+        "title1": "Tasarım ve Geliştirme",
+        "title2": "Profesyonel Web Sitesi",
+        "description": "Web sitesi tasarımı ve geliştirmesi için Lorem Ipsum metni. Bu slayt web hizmetleri hakkındadır."
+      },
+      "1": {
+        "subtitle": "Mobil Uygulama",
+        "title1": "iOS ve Android",
+        "title2": "Profesyonel Uygulama",
+        "description": "iOS ve Android sistemlerinde mobil uygulama geliştirme için Lorem Ipsum metni."
+      },
+      "2": {
+        "subtitle": "Otomasyon ve CRM",
+        "title1": "Yapay Zeka ve CRM",
+        "title2": "İş Otomasyonu",
+        "description": "Yapay zeka yardımıyla otomasyon sistemleri ve CRM tasarımı için Lorem Ipsum metni."
+      }
+    },
+    "buttons": {
+      "consult": "Danışmanlık Alın",
+      "portfolio": "Portföyümüz"
+    }
+  },
+  "WebsiteHighlights": {
+    "items": {
+      "siteDesign": {
+        "title": "Web Tasarım",
+        "description": "Modern Kurumsal Web Sitesi"
+      },
+      "application": {
+        "title": "Uygulama",
+        "description": "Android ve iOS Uygulamaları"
+      },
+      "automation": {
+        "title": "Otomasyon",
+        "description": "Ofis Otomasyon Sistemleri"
+      },
+      "portfolio": {
+        "title": "Portföy",
+        "description": "Portföyümüzü Görüntüleyin"
+      },
+      "crm": { "title": "CRM", "description": "Müşteri İlişkileri Yönetimi" },
+      "education": {
+        "title": "Eğitim",
+        "description": "Uzmanlık Eğitim Kursları"
+      },
+      "consulting": {
+        "title": "Danışmanlık",
+        "description": "Online İş Danışmanlığı"
+      },
+      "seo": { "title": "SEO", "description": "Arama Motoru Optimizasyonu" }
+    }
+  },
+  "AryanaWebServices": {
+    "titlePart1": "Ekip Hizmetleri",
+    "titlePart2": "AryanaWeb",
+    "description": "AryanaWeb hizmetlerine bir bakış:",
+    "services": {
+      "0": { "title": "Kurumsal Web Tasarımı", "desc": "Markalaşma ve güçlü SEO odaklı kurumsal web siteleri tasarlama." },
+      "1": { "title": "Instagram ve Telegram Botları", "desc": "İş ihtiyaçlarınıza uygun özel özelliklerle Instagram ve Telegram için akıllı botların tasarımı ve geliştirilmesi." },
+      "2": { "title": "Profesyonel UI/UX Tasarımı", "desc": "Kullanıcı ihtiyaçlarına uygun modern, kullanışlı arayüz ve kullanıcı deneyimi tasarımı." },
+      "3": { "title": "Uygulama Geliştirme", "desc": "Modern standartlar ve hızlı performans ile Android ve iOS uygulamaları tasarlama ve oluşturma." },
+      "4": { "title": "Web Sitesi Destek ve Bakım", "desc": "Yıl boyunca hata düzeltme, güncellemeler, güvenlik sağlama ve tam site yönetimi." },
+      "5": { "title": "Reklam Kampanyası Başlatma", "desc": "Hedefli Google Ads ve tıklama başına ödeme reklam kampanyalarının yürütülmesi." }
+    }
+  },
+  "AryanawebResumes": {
+    "titlePart1": "AryanaWeb",
+    "titlePart2": "Portföyü",
+    "description": "Bu bölümdeki portföyler, AryanaWeb'de tamamlanan projelerin sadece bir kısmıdır..."
+  },
+  "AryanawebResumeSlider": {
+    "items": {
+      "0": { "title": "Darbar Kuruyemiş", "desc": "Modern ve optimize edilmiş tasarıma sahip profesyonel bir mağaza." },
+      "1": { "title": "Ali Shirzad Sitesi", "desc": "Modern ve optimize edilmiş tasarıma sahip profesyonel bir mağaza." },
+      "2": { "title": "Fast Food Sitesi", "desc": "Hizmet şirketi için temiz ve basit tasarım." },
+      "3": { "title": "Titan Grubu", "desc": "Hizmet şirketi için temiz ve basit tasarım." },
+      "4": { "title": "İş Sitesi", "desc": "Hizmet şirketi için temiz ve basit tasarım." }
+    }
+  },
+  "AryanawebDigitalMarketing": {
+    "contactLabel": "Bize Ulaşın",
+    "title": "Aryana Ajans Dijital Pazarlama Hizmetleri",
+    "description": "Aryana Web'in bir alt kuruluşu olan Aryana Ajans, sosyal medya yönetimi, reklam kampanyası tasarımı ve yürütülmesi, içerik oluşturma, markalaşma ve satış artırma dahil olmak üzere uzman dijital pazarlama hizmetleri sunmaktadır.",
+    "button": "Instagram'ı Görüntüle"
+  },
+  "ContactUsSection": {
+    "title": "Bize Ulaşın",
+    "description": "Herhangi bir sorunuz varsa veya işbirliği yapmak istiyorsanız, lütfen bilgilerinizi girin.",
+    "placeholders": {
+      "name": "Adınızı girin",
+      "phone": "Telefon Numarası (ör. 0912...)",
+      "message": "Mesajınızı yazın..."
+    },
+    "button": "Mesaj Gönder"
+  },
+  "AryanawebTeamMember": {
+    "titlePart1": "Ekip Üyeleri",
+    "titlePart2": "AryanaWeb",
+    "members": {
+      "0": { "role": "Mobil Geliştirici", "alt": "Ekip Üyesi 1" },
+      "1": { "role": "BackEnd Geliştirici", "alt": "Ekip Üyesi 2" },
+      "2": { "role": "FrontEnd Geliştirici", "alt": "Ekip Üyesi 3" }
+    }
+  },
+
+  "Footer": {
+    "title": "AryanaWeb",
+    "description": "İhtiyaçlarınıza uygun yüksek kaliteli web tasarımı ve yazılım geliştirme hizmetleri sunuyoruz.",
+    "columns": {
+      "services": {
+        "title": "Hizmetler",
+        "links": {
+          "webDesign": "Web Tasarım",
+          "webDev": "Web Geliştirme",
+          "app": "Mobil Uygulama"
+        }
+      },
+      "support": {
+        "title": "Destek",
+        "links": {
+          "contact": "Bize Ulaşın",
+          "faq": "SSS",
+          "help": "Yardım"
+        }
+      },
+      "about": {
+        "title": "Hakkımızda",
+        "links": {
+          "team": "Ekibimiz",
+          "products": "Ürünler",
+          "blog": "Blog"
+        }
+      }
+    },
+    "copyright": "© 2025 AryanaWeb. Tüm hakları saklıdır."
+  }
+
+}

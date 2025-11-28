@@ -1,0 +1,142 @@
+{
+  "Header": {
+    "menu": {
+      "home": "Home",
+      "services": "Services",
+      "education": "Education",
+      "blog": "Blog",
+      "contact": "Contact Us"
+    },
+    "actions": {
+      "login": "Login | Sign Up",
+      "contactLabel": "Contact Us",
+      "phoneTitle": "Phone Numbers"
+    }
+  },
+  "TopBar": {
+    "workingHours": "Working Hours: Saturday to Thursday 9:30 AM to 10:00 PM",
+    "address": "Office Address: Unit 5, Milad Building, Shahrak Azadi Entrance, Ardabil"
+  },
+
+  "HeroSection": {
+    "slides": {
+      "0": {
+        "subtitle": "Web Design Services",
+        "title1": "Design & Development",
+        "title2": "Professional Website",
+        "description": "Lorem ipsum dummy text for website design and development. This slide is about web services."
+      },
+      "1": {
+        "subtitle": "Mobile Application",
+        "title1": "iOS & Android",
+        "title2": "Professional App",
+        "description": "Lorem ipsum dummy text for mobile app development on iOS and Android systems."
+      },
+      "2": {
+        "subtitle": "Automation & CRM",
+        "title1": "AI & CRM",
+        "title2": "Business Automation",
+        "description": "Lorem ipsum dummy text for designing automation systems and CRM with the help of AI."
+      }
+    },
+    "buttons": {
+      "consult": "Get Consultation",
+      "portfolio": "Our Portfolio"
+    }
+  },
+  "WebsiteHighlights": {
+    "items": {
+      "siteDesign": { "title": "Web Design", "description": "Modern Corporate Website" },
+      "application": { "title": "Application", "description": "Android & iOS Apps" },
+      "automation": { "title": "Automation", "description": "Office Automation Systems" },
+      "portfolio": { "title": "Portfolio", "description": "View Our Portfolio" },
+      "crm": { "title": "CRM", "description": "Customer Relationship Management" },
+      "education": { "title": "Education", "description": "Specialized Training Courses" },
+      "consulting": { "title": "Consulting", "description": "Online Business Consulting" },
+      "seo": { "title": "SEO", "description": "Search Engine Optimization" }
+    }
+  },
+  "AryanaWebServices": {
+    "titlePart1": "Team Services",
+    "titlePart2": "AryanaWeb",
+    "description": "Here is a glimpse of AryanaWeb services:",
+    "services": {
+      "0": { "title": "Corporate Website Design", "desc": "Designing corporate websites focused on branding and strong SEO." },
+      "1": { "title": "Instagram & Telegram Bots", "desc": "Design and development of smart bots for Instagram and Telegram, with custom features tailored to your business needs." },
+      "2": { "title": "Professional UI/UX Design", "desc": "Modern, usable user interface and user experience design tailored to user needs." },
+      "3": { "title": "App Development", "desc": "Design and build Android and iOS apps with modern standards and fast performance. Providing attractive UI suitable for your business." },
+      "4": { "title": "Website Support & Maintenance", "desc": "Bug fixing, updates, security, and complete site management throughout the year." },
+      "5": { "title": "Ad Campaign Launch", "desc": "Running targeted Google Ads and PPC campaigns." }
+    }
+  },
+  "AryanawebResumes": {
+    "titlePart1": "Portfolio of",
+    "titlePart2": "AryanaWeb",
+    "description": "The portfolios in this section are just a glimpse of the projects done at AryanaWeb..."
+  },
+  "AryanawebResumeSlider": {
+    "items": {
+      "0": { "title": "Darbar Nuts Store", "desc": "A professional store with modern and optimized design." },
+      "1": { "title": "Ali Shirzad Site", "desc": "A professional store with modern and optimized design." },
+      "2": { "title": "Fast Food Site", "desc": "Clean and simple design for a service company." },
+      "3": { "title": "Titan Group", "desc": "Clean and simple design for a service company." },
+      "4": { "title": "Business Site", "desc": "Clean and simple design for a service company." }
+    }
+  },
+  "AryanawebDigitalMarketing": {
+    "contactLabel": "Contact Us",
+    "title": "Aryana Agency Digital Marketing Services",
+    "description": "Aryana Agency, as a subsidiary of Aryana Web, offers specialized digital marketing services including social media management, ad campaign design and execution, content creation, branding, and sales growth.",
+    "button": "View Instagram"
+  },
+  "ContactUsSection": {
+    "title": "Contact Us",
+    "description": "If you have any questions or wish to collaborate, please enter your details.",
+    "placeholders": {
+      "name": "Enter your name",
+      "phone": "Phone Number (e.g. 0912...)",
+      "message": "Write your message..."
+    },
+    "button": "Send Message"
+  },
+  "AryanawebTeamMember": {
+    "titlePart1": "Team Members",
+    "titlePart2": "AryanaWeb",
+    "members": {
+      "0": { "role": "Mobile Developer", "alt": "Team Member 1" },
+      "1": { "role": "BackEnd Developer", "alt": "Team Member 2" },
+      "2": { "role": "FrontEnd Developer", "alt": "Team Member 3" }
+    }
+  },
+  "Footer": {
+    "title": "AryanaWeb",
+    "description": "Providing high-quality web design and software development services tailored to your needs.",
+    "columns": {
+      "services": {
+        "title": "Services",
+        "links": {
+          "webDesign": "Web Design",
+          "webDev": "Web Development",
+          "app": "Mobile App"
+        }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "contact": "Contact Us",
+          "faq": "FAQs",
+          "help": "Help Center"
+        }
+      },
+      "about": {
+        "title": "About Us",
+        "links": {
+          "team": "Our Team",
+          "products": "Products",
+          "blog": "Blog"
+        }
+      }
+    },
+    "copyright": "© 2025 AryanaWeb. All rights reserved."
+  }
+}

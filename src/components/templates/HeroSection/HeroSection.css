@@ -1,0 +1,10 @@
+.hero-section-bio-title-special::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 1rem;
+
+  background: linear-gradient(to bottom, #ffffff, #12dab27e);
+}
