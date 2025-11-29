@@ -70,8 +70,7 @@
       "1": { "title": "Instagram & Telegram Bots", "desc": "Design and development of smart bots for Instagram and Telegram, with custom features tailored to your business needs." },
       "2": { "title": "Professional UI/UX Design", "desc": "Modern, usable user interface and user experience design tailored to user needs." },
       "3": { "title": "App Development", "desc": "Design and build Android and iOS apps with modern standards and fast performance. Providing attractive UI suitable for your business." },
-      "4": { "title": "Website Support & Maintenance", "desc": "Bug fixing, updates, security, and complete site management throughout the year." },
-      "5": { "title": "Ad Campaign Launch", "desc": "Running targeted Google Ads and PPC campaigns." }
+      "4": { "title": "Website Support & Maintenance", "desc": "Bug fixing, updates, security, and complete site management throughout the year." }
     }
   },
   "AryanawebResumes": {
@@ -143,5 +142,8 @@
       }
     },
     "copyright": "© 2025 AryanaWeb. All rights reserved."
+  },
+    "seeMore":{
+    "btn" : "View More"
   }
 }

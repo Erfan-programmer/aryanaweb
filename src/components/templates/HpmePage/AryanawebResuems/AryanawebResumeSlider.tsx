@@ -15,7 +15,6 @@ export default function AryanawebResumeSlider() {
   const locale = useLocale();
   const isRtl = locale === "fa" || locale === "ar";
 
-  // تغییر 2: استفاده از useState به جای useRef
   const [prevEl, setPrevEl] = useState<HTMLButtonElement | null>(null);
   const [nextEl, setNextEl] = useState<HTMLButtonElement | null>(null);
 
@@ -41,12 +40,10 @@ export default function AryanawebResumeSlider() {
         dir={isRtl ? "rtl" : "ltr"}
         key={locale}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
-        // تغییر 3: پاس دادن مستقیم استیت‌ها به navigation
         navigation={{
           prevEl,
           nextEl,
         }}
-        // نکته: onBeforeInit دیگر برای نویگیشن لازم نیست
         className="overflow-hidden py-4"
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 8 },
@@ -74,8 +71,6 @@ export default function AryanawebResumeSlider() {
         ))}
       </Swiper>
 
-      {/* دکمه‌های کاستوم نویگیشن */}
-      {/* تغییر 4: استفاده از ref فانکشنال برای ست کردن استیت */}
       <button 
         ref={(node) => setPrevEl(node)}
         className={`swiper-prev absolute cursor-pointer top-1/2 -translate-y-1/2 z-10 bg-[var(--main-color)] hover:bg-[var(--main-color)]/80 text-white p-3 rounded-full shadow-md transition  duration-300 ${isRtl ? '-right-4' : '-left-4'}`}

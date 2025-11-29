@@ -88,8 +88,7 @@
       "1": { "title": "Instagram ve Telegram Botları", "desc": "İş ihtiyaçlarınıza uygun özel özelliklerle Instagram ve Telegram için akıllı botların tasarımı ve geliştirilmesi." },
       "2": { "title": "Profesyonel UI/UX Tasarımı", "desc": "Kullanıcı ihtiyaçlarına uygun modern, kullanışlı arayüz ve kullanıcı deneyimi tasarımı." },
       "3": { "title": "Uygulama Geliştirme", "desc": "Modern standartlar ve hızlı performans ile Android ve iOS uygulamaları tasarlama ve oluşturma." },
-      "4": { "title": "Web Sitesi Destek ve Bakım", "desc": "Yıl boyunca hata düzeltme, güncellemeler, güvenlik sağlama ve tam site yönetimi." },
-      "5": { "title": "Reklam Kampanyası Başlatma", "desc": "Hedefli Google Ads ve tıklama başına ödeme reklam kampanyalarının yürütülmesi." }
+      "4": { "title": "Web Sitesi Destek ve Bakım", "desc": "Yıl boyunca hata düzeltme, güncellemeler, güvenlik sağlama ve tam site yönetimi." }
     }
   },
   "AryanawebResumes": {
@@ -162,6 +161,9 @@
       }
     },
     "copyright": "© 2025 AryanaWeb. Tüm hakları saklıdır."
+  },
+   "seeMore":{
+    "btn" : "Daha Fazla Gör"
   }
 
 }

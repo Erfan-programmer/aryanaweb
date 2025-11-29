@@ -1,6 +1,7 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 import { GrBlockQuote } from "react-icons/gr";
 
 interface ResumeSliderProps {
@@ -10,11 +11,6 @@ interface ResumeSliderProps {
   link: string;
 }
 
-const overlayImages = [
-  "/persian--32384.png",
-  "/zoroastrianism--32402.png",
-  "/acropolis--32354.png",
-];
 
 export default function AryanawebResumeSliderBox({
   img,
@@ -23,6 +19,7 @@ export default function AryanawebResumeSliderBox({
   link,
 }: ResumeSliderProps) {
   const [hover, setHover] = useState(false);
+  const t = useTranslations("seeMore");
 
   return (
     <article
@@ -31,18 +28,14 @@ export default function AryanawebResumeSliderBox({
       onMouseLeave={() => setHover(false)}
       onClick={() => setHover(true)}
     >
-      {/* باکس کانتینر عکس */}
       <div className="w-full h-40 overflow-hidden rounded-t-xl relative bg-gray-100">
         <img
           src={img}
           alt={title}
-          // تغییرات در اینجا اعمال شد:
-          // 1. استفاده از min-h-full برای اطمینان از پر شدن قاب
-          // 2. استفاده از style برای محاسبه دقیق اسکرول
           className="w-full min-h-full object-cover transition-transform duration-[4000ms] ease-linear will-change-transform"
           style={{
             transform: hover 
-              ? "translateY(calc(-100% + 160px))" // کل عکس بره بالا منهای ارتفاع کادر (160 پیکسل)
+              ? "translateY(calc(-100% + 160px))"
               : "translateY(0)",
           }}
         />
@@ -63,7 +56,6 @@ export default function AryanawebResumeSliderBox({
           onMouseLeave={() => setHover(false)}
           className="mt-2 relative inline-block text-center bg-[var(--main-color)] text-white rounded-lg py-2 text-sm hover:bg-[var(--main-color)]/50 transition-all overflow-hidden"
         >
-          {/* آیکون‌ها و محتوای دکمه بدون تغییر باقی ماندند */}
           <Image
             width={20}
             height={20}
@@ -100,7 +92,7 @@ export default function AryanawebResumeSliderBox({
               ${hover ? "opacity-40 scale-100 -translate-y-10 translate-x-12" : ""}
             `}
           />
-          مشاهده بیشتر
+          {t("btn")}
         </a>
       </div>
     </article>

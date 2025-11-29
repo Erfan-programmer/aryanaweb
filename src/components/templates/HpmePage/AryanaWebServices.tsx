@@ -17,13 +17,11 @@ export default function AryanaWebServices() {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
 
-  // لیست عکس‌ها ثابت است، اما متن‌ها از ترجمه می‌آیند
   const servicesImages = [
     "/world-wide-web.png",
     "/robot-dog.png",
     "/ui.png",
     "/mobile-phone.png",
-    "/world-wide-web.png",
     "/world-wide-web.png",
   ];
 
