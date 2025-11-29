@@ -49,16 +49,16 @@
       "portfolio": "أعمالنا"
     }
   },
-  "WebsiteHighlights": {
+ "WebsiteHighlights": {
     "items": {
-      "siteDesign": { "title": "تصميم المواقع", "description": "موقع ويب حديث للشركات" },
-      "application": { "title": "تطبيقات", "description": "تطبيقات Android و iOS" },
-      "automation": { "title": "أتمتة", "description": "أنظمة أتمتة المكاتب" },
-      "portfolio": { "title": "أعمالنا", "description": "شاهد نماذج أعمالنا" },
-      "crm": { "title": "CRM", "description": "إدارة علاقات العملاء" },
-      "education": { "title": "تعليم", "description": "دورات تدريبية متخصصة" },
-      "consulting": { "title": "استشارة", "description": "استشارات الأعمال عبر الإنترنت" },
-      "seo": { "title": "سيو", "description": "تحسين محركات البحث" }
+      "siteDesign": { "title": "تصميم المواقع", "description": "مواقع شركات حديثة ومتجاوبة" },
+      "application": { "title": "تطبيقات", "description": "تطوير تطبيقات أندرويد و iOS" },
+      "automation": { "title": "أتمتة", "description": "أنظمة أتمتة المكاتب المتكاملة" },
+      "portfolio": { "title": "أعمالنا", "description": "شاهد أحدث مشاريعنا المنجزة" },
+      "crm": { "title": "إدارة العملاء", "description": "نظام إدارة علاقات العملاء المتطور" },
+      "education": { "title": "التعليم", "description": "دورات تعليمية متخصصة في البرمجة" },
+      "consulting": { "title": "استشارات", "description": "استشارات متخصصة لنمو الأعمال" },
+      "seo": { "title": "سيو", "description": "تحسين محركات البحث الاحترافي" }
     }
   },
   "AryanaWebServices": {

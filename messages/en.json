@@ -51,14 +51,14 @@
   },
   "WebsiteHighlights": {
     "items": {
-      "siteDesign": { "title": "Web Design", "description": "Modern Corporate Website" },
-      "application": { "title": "Application", "description": "Android & iOS Apps" },
-      "automation": { "title": "Automation", "description": "Office Automation Systems" },
-      "portfolio": { "title": "Portfolio", "description": "View Our Portfolio" },
-      "crm": { "title": "CRM", "description": "Customer Relationship Management" },
-      "education": { "title": "Education", "description": "Specialized Training Courses" },
-      "consulting": { "title": "Consulting", "description": "Online Business Consulting" },
-      "seo": { "title": "SEO", "description": "Search Engine Optimization" }
+      "siteDesign": { "title": "Web Design", "description": "Modern & Responsive Corporate Websites" },
+      "application": { "title": "App Dev", "description": "Android & iOS Application Development" },
+      "automation": { "title": "Automation", "description": "Integrated Office Automation Systems" },
+      "portfolio": { "title": "Portfolio", "description": "Check Out Our Latest Projects" },
+      "crm": { "title": "CRM", "description": "Advanced Customer Relationship Management" },
+      "education": { "title": "Education", "description": "Specialized Programming Courses" },
+      "consulting": { "title": "Consulting", "description": "Expert Online Business Consulting" },
+      "seo": { "title": "SEO", "description": "Professional Search Engine Optimization" }
     }
   },
   "AryanaWebServices": {

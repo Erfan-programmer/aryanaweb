@@ -19,14 +19,14 @@ export default function WebsiteHighlights() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const highlightsData: HighlightData[] = [
-    { id: 1, key: "siteDesign", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
-    { id: 2, key: "application", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
-    { id: 3, key: "automation", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
-    { id: 4, key: "portfolio", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
-    { id: 5, key: "crm", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
-    { id: 6, key: "education", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
-    { id: 7, key: "consulting", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
-    { id: 8, key: "seo", img: "/459725486_1085086939886582_2878224217257692386_n.jpg" },
+    { id: 1, key: "siteDesign", img: "/website-image.jpg" },
+    { id: 2, key: "application", img: "/android.jpg" },
+    { id: 3, key: "automation", img: "/automasion.jpg" },
+    { id: 4, key: "portfolio", img: "/portfolio.jpg" },
+    { id: 5, key: "crm", img: "/crm.jpg" },
+    { id: 6, key: "education", img: "/education.jpg" },
+    { id: 7, key: "consulting", img: "/Consulting.jpg" },
+    { id: 8, key: "seo", img: "/SEO.jpg" },
   ].map((item) => ({
     id: item.id,
     coverImage: item.img,

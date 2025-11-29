@@ -49,34 +49,16 @@
       "portfolio": "Portföyümüz"
     }
   },
-  "WebsiteHighlights": {
+ "WebsiteHighlights": {
     "items": {
-      "siteDesign": {
-        "title": "Web Tasarım",
-        "description": "Modern Kurumsal Web Sitesi"
-      },
-      "application": {
-        "title": "Uygulama",
-        "description": "Android ve iOS Uygulamaları"
-      },
-      "automation": {
-        "title": "Otomasyon",
-        "description": "Ofis Otomasyon Sistemleri"
-      },
-      "portfolio": {
-        "title": "Portföy",
-        "description": "Portföyümüzü Görüntüleyin"
-      },
-      "crm": { "title": "CRM", "description": "Müşteri İlişkileri Yönetimi" },
-      "education": {
-        "title": "Eğitim",
-        "description": "Uzmanlık Eğitim Kursları"
-      },
-      "consulting": {
-        "title": "Danışmanlık",
-        "description": "Online İş Danışmanlığı"
-      },
-      "seo": { "title": "SEO", "description": "Arama Motoru Optimizasyonu" }
+      "siteDesign": { "title": "Web Tasarım", "description": "Modern ve Mobil Uyumlu Web Siteleri" },
+      "application": { "title": "Uygulama", "description": "Android ve iOS Uygulama Geliştirme" },
+      "automation": { "title": "Otomasyon", "description": "Entegre Ofis Otomasyon Sistemleri" },
+      "portfolio": { "title": "Portföy", "description": "En Son Projelerimize Göz Atın" },
+      "crm": { "title": "CRM", "description": "Gelişmiş Müşteri İlişkileri Yönetimi" },
+      "education": { "title": "Eğitim", "description": "Uzmanlaşmış Programlama Kursları" },
+      "consulting": { "title": "Danışmanlık", "description": "Online İş Büyütme Danışmanlığı" },
+      "seo": { "title": "SEO", "description": "Profesyonel Arama Motoru Optimizasyonu" }
     }
   },
   "AryanaWebServices": {

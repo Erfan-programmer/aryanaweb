@@ -49,18 +49,20 @@
       "portfolio": "نمونه کارهای ما"
     }
   },
+ 
   "WebsiteHighlights": {
     "items": {
-      "siteDesign": { "title": "طراحی سایت", "description": "وبسایت شرکتی مدرن" },
-      "application": { "title": "اپلیکیشن", "description": "اپلیکیشن اندروید و iOS" },
-      "automation": { "title": "اتوماسیون", "description": "سیستم‌های اتوماسیون اداری" },
-      "portfolio": { "title": "نمونه کار", "description": "مشاهده نمونه کارهای ما" },
-      "crm": { "title": "CRM", "description": "مدیرت ارتباط با مشتری" },
-      "education": { "title": "آموزش", "description": "دوره های آموزشی تخصصی" },
-      "consulting": { "title": "مشاوره", "description": "مشاوره کسب و کار آنلاین" },
-      "seo": { "title": "سئو", "description": "بهینه سازی موتور جستجو" }
+      "siteDesign": { "title": "طراحی سایت", "description": "وبسایت شرکتی مدرن و واکنش‌گرا" },
+      "application": { "title": "اپلیکیشن", "description": "توسعه اپلیکیشن‌های اندروید و iOS" },
+      "automation": { "title": "اتوماسیون", "description": "سیستم‌های یکپارچه اتوماسیون اداری" },
+      "portfolio": { "title": "نمونه‌کار", "description": "مشاهده آخرین پروژه‌های انجام شده" },
+      "crm": { "title": "CRM", "description": "مدیریت پیشرفته ارتباط با مشتریان" },
+      "education": { "title": "آموزش", "description": "دوره‌های آموزشی تخصصی برنامه‌نویسی" },
+      "consulting": { "title": "مشاوره", "description": "مشاوره تخصصی رشد کسب‌وکار آنلاین" },
+      "seo": { "title": "سئو", "description": "بهینه‌سازی حرفه‌ای برای موتورهای جستجو" }
     }
-  },
+  
+},
   "AryanaWebServices": {
     "titlePart1": "خدمات تیم",
     "titlePart2": "آریاناوب",
